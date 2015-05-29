@@ -1,5 +1,9 @@
 describe("normalizePhrase", function() {
-  it("user inputs a sentence and the sentence outputs on the page.", function() {
-    expect(normalizePhrase("hello world")).to.equal(["hello", "world"]);
+  it("input string is lowercased, split into an array, and punctuation is removed", function() {
+    expect(normalizePhrase("HELLO,.,., world")).to.equal(["hello", "world"]);
   });
+
+  describe("findReplace", function() {
+    it("user inputs a sentence and ")
+  })
 });
