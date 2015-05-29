@@ -6,6 +6,6 @@ describe("normalizePhrase", function() {
 
   describe("findReplace", function() {
     it("user inputs a string, a word to replace, and the replacement word, and it outputs the changed string", function() {
-      expect(findReplace("hello world")).to.equal("hello universe");
+      expect(findReplace("hello world", "world", "universe")).to.equal("hello universe");
     });
 });
