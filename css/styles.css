@@ -1,3 +1,22 @@
 body {
   text-align: center;
+  background-image: url("images/background.jpg");
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #D0F8FF;
+    text-shadow: 0 0 5px #A5F1FF, 0 0 10px #A5F1FF,
+             0 0 20px #A5F1FF, 0 0 30px #A5F1FF,
+             0 0 40px #A5F1FF;
+
+}
+
+textarea:focus, input:focus {
+    color: white;
+}
+
+input[type="text"], textarea {
+
+  background-color: rgba(50, 50, 0, .25)
+
 }
