@@ -1,12 +1,8 @@
-var normalizeWord = function(word) {
-  var word = word.toLowerCase().replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+var normalizePhrase = function(phrase) {
+  var word = phrase.toLowerCase().replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, "").split(" ")
   return word
 };
 
-var findReplace = function(phrase) {
-  var splitPhrase = normalizeWord(phrase).split(" ");
-  return splitPhrase;
-};
 
 $(document).ready(function() {
   $("form#find-replace").submit(function(event) {
@@ -18,7 +14,3 @@ $(document).ready(function() {
     event.preventDefault();
   });
 });
-
-
-[ 'hello', 'world' ]
-[ 'hello', 'world' ]
