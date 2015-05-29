@@ -1,5 +1,5 @@
-var findReplace = function(word) {
-  var word = word.toLowerCase();
+var normalizeWord = function(word) {
+  var word = word.toLowerCase().replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/g, "");
   return word
 }
 
