@@ -16,9 +16,10 @@ var findReplace = function(words, wordReplace, wordReplacement) {
 
 $(document).ready(function() {
   $("form#find-replace").submit(function(event) {
-    var word = ($("input#input").val());
-    var result = findReplace(word);
-
+    var words = ($("input#string").val());
+    var wordReplace = ($("input#replace").val());
+    var wordReplacement = ($("input#replacement").val());
+    var result = findReplace(words, wordReplace, wordReplacement);
     $(".sentence").text(result);
     $("#result").text(result);
     event.preventDefault();

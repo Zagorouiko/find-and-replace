@@ -1,6 +1,7 @@
 describe("normalizePhrase", function() {
   it("input string is lowercased, split into an array, and punctuation is removed", function() {
     expect(normalizePhrase("HELLO,.,., world")).to.equal(["hello", "world"]);
+    //spec failing, but has the expected value?
   });
 });
 
