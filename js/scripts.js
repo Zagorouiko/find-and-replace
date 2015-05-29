@@ -1,5 +1,5 @@
 var findReplace = function(word) {
-  // var inputWord = word.split(" ")
+  var word = word.toLowerCase();
   return word
 }
 
