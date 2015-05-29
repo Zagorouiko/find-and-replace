@@ -1,5 +1,5 @@
 describe("findReplace", function() {
-  it("it replaces a single word for another word.", function() {
-    expect(findReplace("cat")).to.equal("dog");
+  it("user inputs a sentence and the sentence outputs on the page.", function() {
+    expect(findReplace("I'm so blue I'm greener than purple")).to.equal("I'm so blue I'm greener than purple");
   });
 });
